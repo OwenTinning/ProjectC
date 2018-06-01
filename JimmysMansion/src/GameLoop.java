@@ -110,7 +110,7 @@ public class GameLoop extends JFrame {
     }
     
     private void createSprites() {
-   		me = new SimpleSprite(MazeBackground.START_X, MazeBackground.START_Y);
+   		me = new BouncingSprite(MazeBackground.START_X, MazeBackground.START_Y);
     	sprites.add(me);
     	
     	for (Sprite sprite : sprites) {
