@@ -110,7 +110,7 @@ public class GameLoop extends JFrame {
     }
     
     private void createSprites() {
-   		me = new BouncingSprite(MazeBackground.START_X, MazeBackground.START_Y, 0, 0);
+   		me = new SimpleSprite(100, 100);
     	sprites.add(me);
     	
     	for (Sprite sprite : sprites) {
@@ -235,7 +235,7 @@ public class GameLoop extends JFrame {
 			}
 
 			paintBackground(g, maze);
-			paintBackground(g, black);
+//			paintBackground(g, black);
 //			g.setColor(BARRIER_COLOR);
 //			for (Rectangle barrier : barriers) {
 //				g.fillRect((int)barrier.getX() + xOffset,(int) barrier.getY() + yOffset, (int)barrier.getWidth(), (int)barrier.getHeight());       	
